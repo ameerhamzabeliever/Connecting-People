@@ -1,0 +1,200 @@
+PODS:
+  - AgoraRtcEngine_iOS (3.4.1)
+  - Alamofire (4.9.1)
+  - Device.swift (1.2.2)
+  - DTOverlayController (1.0.2)
+  - Firebase/Analytics (7.11.0):
+    - Firebase/Core
+  - Firebase/Core (7.11.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (~> 7.11.0)
+  - Firebase/CoreOnly (7.11.0):
+    - FirebaseCore (= 7.11.0)
+  - Firebase/DynamicLinks (7.11.0):
+    - Firebase/CoreOnly
+    - FirebaseDynamicLinks (~> 7.11.0)
+  - FirebaseAnalytics (7.11.0):
+    - FirebaseAnalytics/AdIdSupport (= 7.11.0)
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/MethodSwizzler (~> 7.0)
+    - GoogleUtilities/Network (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+    - nanopb (~> 2.30908.0)
+  - FirebaseAnalytics/AdIdSupport (7.11.0):
+    - FirebaseAnalytics/Base (= 7.11.0)
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - GoogleAppMeasurement/AdIdSupport (= 7.11.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/MethodSwizzler (~> 7.0)
+    - GoogleUtilities/Network (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+    - nanopb (~> 2.30908.0)
+  - FirebaseAnalytics/Base (7.11.0):
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/MethodSwizzler (~> 7.0)
+    - GoogleUtilities/Network (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+    - nanopb (~> 2.30908.0)
+  - FirebaseCore (7.11.0):
+    - FirebaseCoreDiagnostics (~> 7.4)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/Logger (~> 7.0)
+  - FirebaseCoreDiagnostics (7.11.0):
+    - GoogleDataTransport (~> 8.4)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/Logger (~> 7.0)
+    - nanopb (~> 2.30908.0)
+  - FirebaseDynamicLinks (7.11.0):
+    - FirebaseCore (~> 7.0)
+  - FirebaseInstallations (7.11.0):
+    - FirebaseCore (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/UserDefaults (~> 7.0)
+    - PromisesObjC (~> 1.2)
+  - GoogleAppMeasurement/AdIdSupport (7.11.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/MethodSwizzler (~> 7.0)
+    - GoogleUtilities/Network (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+    - nanopb (~> 2.30908.0)
+  - GoogleDataTransport (8.4.0):
+    - GoogleUtilities/Environment (~> 7.2)
+    - nanopb (~> 2.30908.0)
+    - PromisesObjC (~> 1.2)
+  - GoogleUtilities/AppDelegateSwizzler (7.4.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (7.4.0):
+    - PromisesObjC (~> 1.2)
+  - GoogleUtilities/Logger (7.4.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (7.4.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (7.4.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.4.0)"
+  - GoogleUtilities/Reachability (7.4.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (7.4.0):
+    - GoogleUtilities/Logger
+  - Kingfisher (6.3.0)
+  - LinearProgressView (2.0.1)
+  - nanopb (2.30908.0):
+    - nanopb/decode (= 2.30908.0)
+    - nanopb/encode (= 2.30908.0)
+  - nanopb/decode (2.30908.0)
+  - nanopb/encode (2.30908.0)
+  - PINCache (3.0.3):
+    - PINCache/Arc-exception-safe (= 3.0.3)
+    - PINCache/Core (= 3.0.3)
+  - PINCache/Arc-exception-safe (3.0.3):
+    - PINCache/Core
+  - PINCache/Core (3.0.3):
+    - PINOperation (~> 1.2.1)
+  - PINOperation (1.2.1)
+  - PromisesObjC (1.2.12)
+  - SkeletonView (1.15.0)
+  - SnapSDK (1.9.0):
+    - SnapSDK/SCSDKBitmojiKit (= 1.9.0)
+    - SnapSDK/SCSDKCoreKit (= 1.9.0)
+    - SnapSDK/SCSDKCreativeKit (= 1.9.0)
+    - SnapSDK/SCSDKLoginKit (= 1.9.0)
+    - SnapSDK/SCSDKStoryKit (= 1.9.0)
+  - SnapSDK/SCSDKBitmojiKit (1.9.0):
+    - PINCache (< 3.1, >= 2.3)
+    - PINOperation (~> 1.2.1)
+    - SnapSDK/SCSDKCoreKit
+  - SnapSDK/SCSDKCoreKit (1.9.0)
+  - SnapSDK/SCSDKCreativeKit (1.9.0):
+    - SnapSDK/SCSDKCoreKit
+  - SnapSDK/SCSDKLoginKit (1.9.0):
+    - SnapSDK/SCSDKCoreKit
+  - SnapSDK/SCSDKStoryKit (1.9.0):
+    - SnapSDK/SCSDKCoreKit
+  - Socket.IO-Client-Swift (15.2.0):
+    - Starscream (~> 3.1)
+  - Starscream (3.1.1)
+  - SwiftyJSON (5.0.1)
+  - XLPagerTabStrip (9.0.0)
+
+DEPENDENCIES:
+  - AgoraRtcEngine_iOS
+  - Alamofire (~> 4.7)
+  - Device.swift
+  - DTOverlayController
+  - Firebase/Analytics
+  - Firebase/DynamicLinks
+  - Kingfisher
+  - LinearProgressView
+  - SkeletonView
+  - SnapSDK
+  - Socket.IO-Client-Swift (~> 15.2.0)
+  - SwiftyJSON
+  - XLPagerTabStrip (~> 9.0)
+
+SPEC REPOS:
+  trunk:
+    - AgoraRtcEngine_iOS
+    - Alamofire
+    - Device.swift
+    - DTOverlayController
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseDynamicLinks
+    - FirebaseInstallations
+    - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleUtilities
+    - Kingfisher
+    - LinearProgressView
+    - nanopb
+    - PINCache
+    - PINOperation
+    - PromisesObjC
+    - SkeletonView
+    - SnapSDK
+    - Socket.IO-Client-Swift
+    - Starscream
+    - SwiftyJSON
+    - XLPagerTabStrip
+
+SPEC CHECKSUMS:
+  AgoraRtcEngine_iOS: 363792913015c47397db88052d3c3cb765f519d0
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Device.swift: 3f93632bb3fa3e4ebb9b202563975177e17c4296
+  DTOverlayController: 7bd26660a6152efabea36f9342182c038d80852e
+  Firebase: c121feb35e4126c0b355e3313fa9b487d47319fd
+  FirebaseAnalytics: cd3bd84d722a24a8923918af8af8e5236f615d77
+  FirebaseCore: 907447d8917a4d3eb0cce2829c5a0ad21d90b432
+  FirebaseCoreDiagnostics: 68ad972f99206cef818230f3f3179d52ccfb7f8c
+  FirebaseDynamicLinks: 07f101c20bb40fd39f6b3e5278a64a5f2f660dc1
+  FirebaseInstallations: a58d4f72ec5861840b84df489f2668d970df558a
+  GoogleAppMeasurement: fd19169c3034975cb934e865e5667bfdce59df7f
+  GoogleDataTransport: cd9db2180fcecd8da1b561aea31e3e56cf834aa7
+  GoogleUtilities: 284cddc7fffc14ae1907efb6f78ab95c1fccaedc
+  Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
+  LinearProgressView: 353d4d45dc599b83cc4b43f14e6c0336aa6f3834
+  nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
+  PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
+  PINOperation: 00c935935f1e8cf0d1e2d6b542e75b88fc3e5e20
+  PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  SkeletonView: cac18a3ac4f893b09d99e65072d806ef08377aae
+  SnapSDK: ac7836cec8c3a380cff4646a1177ea1d753cfb8c
+  Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
+
+PODFILE CHECKSUM: e288ec6673ddb90c138ffc53d55ec1a8d8ac7a23
+
+COCOAPODS: 1.10.1

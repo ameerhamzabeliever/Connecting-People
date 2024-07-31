@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ColorCell" customModule="Quokka" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="67" height="67"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="67" height="67"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yQ7-FU-IH2">
+                        <rect key="frame" x="0.0" y="0.0" width="67" height="67"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TTb-AC-hyu">
+                                <rect key="frame" x="5" y="5" width="57" height="57"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sampleAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="MFb-uU-fgK">
+                                        <rect key="frame" x="3" y="5.6666666666666679" width="51" height="51.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="MFb-uU-fgK" secondAttribute="height" multiplier="1:1" id="r2I-j4-Zhu"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="Bg-Green"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TTb-AC-hyu" secondAttribute="height" multiplier="1:1" id="ESZ-Ay-9ul"/>
+                                    <constraint firstItem="MFb-uU-fgK" firstAttribute="centerX" secondItem="TTb-AC-hyu" secondAttribute="centerX" id="GOb-At-QVV"/>
+                                    <constraint firstAttribute="bottom" secondItem="MFb-uU-fgK" secondAttribute="bottom" id="JZr-g7-za7"/>
+                                    <constraint firstItem="MFb-uU-fgK" firstAttribute="width" secondItem="TTb-AC-hyu" secondAttribute="width" multiplier="0.9" id="qI5-4D-uat"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TTb-AC-hyu" firstAttribute="centerX" secondItem="yQ7-FU-IH2" secondAttribute="centerX" id="5qC-Mo-FB8"/>
+                            <constraint firstItem="TTb-AC-hyu" firstAttribute="height" secondItem="yQ7-FU-IH2" secondAttribute="height" multiplier="0.85" id="M7z-47-5oI"/>
+                            <constraint firstItem="TTb-AC-hyu" firstAttribute="centerY" secondItem="yQ7-FU-IH2" secondAttribute="centerY" id="Q2D-Kw-E4x"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="yQ7-FU-IH2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HHX-Hi-Gyg"/>
+                <constraint firstAttribute="trailing" secondItem="yQ7-FU-IH2" secondAttribute="trailing" id="MUn-qS-865"/>
+                <constraint firstAttribute="bottom" secondItem="yQ7-FU-IH2" secondAttribute="bottom" id="xpM-0i-e1E"/>
+                <constraint firstItem="yQ7-FU-IH2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zOc-ll-9gy"/>
+            </constraints>
+            <connections>
+                <outlet property="imgProfile" destination="MFb-uU-fgK" id="XY8-u0-8VI"/>
+                <outlet property="viewInner" destination="TTb-AC-hyu" id="Eer-LH-2da"/>
+                <outlet property="viewOutter" destination="yQ7-FU-IH2" id="OaC-JV-QH6"/>
+            </connections>
+            <point key="canvasLocation" x="-23" y="46"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="sampleAvatar" width="540" height="512"/>
+        <namedColor name="Bg-Green">
+            <color red="0.23899999260902405" green="0.47099998593330383" blue="0.4309999942779541" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

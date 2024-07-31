@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Apercu Pro Medium.otf">
+            <string>ApercuPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FlagVC" customModule="Quokka" customModuleProvider="target">
+            <connections>
+                <outlet property="lblReport" destination="47g-QB-zFQ" id="ChA-UU-bf3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Safety Toolkit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="772-vo-6vQ">
+                    <rect key="frame" x="31" y="77" width="156" height="30.5"/>
+                    <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="26"/>
+                    <color key="textColor" name="Text-Color-1-100"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="86Q-Jy-Hyb" userLabel="Report">
+                    <rect key="frame" x="31" y="130.5" width="373" height="34"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag-2" translatesAutoresizingMaskIntoConstraints="NO" id="glc-Ui-dsZ">
+                            <rect key="frame" x="0.0" y="-0.5" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="glc-Ui-dsZ" secondAttribute="height" multiplier="1:1" id="Xdd-t0-TpX"/>
+                                <constraint firstAttribute="height" constant="35" id="zaW-tD-LSJ"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report Natasha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47g-QB-zFQ">
+                            <rect key="frame" x="51" y="5" width="140.5" height="23.5"/>
+                            <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="20"/>
+                            <color key="textColor" name="Text-Color-1-100"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="glc-Ui-dsZ" firstAttribute="leading" secondItem="86Q-Jy-Hyb" secondAttribute="leading" id="4xV-i8-Vpk"/>
+                        <constraint firstItem="glc-Ui-dsZ" firstAttribute="centerY" secondItem="86Q-Jy-Hyb" secondAttribute="centerY" id="JpW-N6-w8P"/>
+                        <constraint firstItem="47g-QB-zFQ" firstAttribute="leading" secondItem="glc-Ui-dsZ" secondAttribute="trailing" constant="16" id="kqR-vg-X98"/>
+                        <constraint firstItem="47g-QB-zFQ" firstAttribute="centerY" secondItem="86Q-Jy-Hyb" secondAttribute="centerY" id="tjZ-XH-s2F"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9PE-R1-yof" userLabel="Never Chat">
+                    <rect key="frame" x="31" y="200.5" width="373" height="35"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="block" translatesAutoresizingMaskIntoConstraints="NO" id="rsB-dQ-iBH">
+                            <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="rsB-dQ-iBH" secondAttribute="height" multiplier="1:1" id="928-t1-pJr"/>
+                                <constraint firstAttribute="height" constant="35" id="DlP-Op-nix"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Never chat again" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yn5-JN-MDk">
+                            <rect key="frame" x="51" y="5.5" width="151.5" height="23.5"/>
+                            <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="20"/>
+                            <color key="textColor" name="Text-Color-1-100"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="rsB-dQ-iBH" firstAttribute="centerY" secondItem="9PE-R1-yof" secondAttribute="centerY" id="AkE-lK-QlW"/>
+                        <constraint firstItem="rsB-dQ-iBH" firstAttribute="leading" secondItem="9PE-R1-yof" secondAttribute="leading" id="BUf-uM-X2g"/>
+                        <constraint firstItem="Yn5-JN-MDk" firstAttribute="leading" secondItem="rsB-dQ-iBH" secondAttribute="trailing" constant="16" id="bso-ia-Kn2"/>
+                        <constraint firstItem="Yn5-JN-MDk" firstAttribute="centerY" secondItem="9PE-R1-yof" secondAttribute="centerY" id="nF2-TT-CaD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="86Q-Jy-Hyb" firstAttribute="top" secondItem="772-vo-6vQ" secondAttribute="bottom" constant="23" id="BjA-aH-9JD"/>
+                <constraint firstItem="86Q-Jy-Hyb" firstAttribute="leading" secondItem="772-vo-6vQ" secondAttribute="leading" id="CJL-CL-lA0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9PE-R1-yof" secondAttribute="trailing" constant="10" id="IQo-Gc-YkZ"/>
+                <constraint firstItem="9PE-R1-yof" firstAttribute="leading" secondItem="86Q-Jy-Hyb" secondAttribute="leading" id="K7J-7E-EpF"/>
+                <constraint firstItem="9PE-R1-yof" firstAttribute="top" secondItem="86Q-Jy-Hyb" secondAttribute="bottom" constant="36" id="Pfd-Z5-9q6"/>
+                <constraint firstItem="772-vo-6vQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="33" id="TWz-NY-0nS"/>
+                <constraint firstItem="86Q-Jy-Hyb" firstAttribute="height" secondItem="772-vo-6vQ" secondAttribute="height" multiplier="1.11111" id="Ump-1H-yP5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="86Q-Jy-Hyb" secondAttribute="trailing" constant="10" id="nqD-pO-yEc"/>
+                <constraint firstItem="772-vo-6vQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="31" id="wEZ-iM-Z4v"/>
+                <constraint firstItem="9PE-R1-yof" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.0390625" id="wgC-3G-tkq"/>
+            </constraints>
+            <point key="canvasLocation" x="-23" y="76"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="block" width="128" height="128"/>
+        <image name="flag-2" width="128" height="128"/>
+        <namedColor name="Text-Color-1-100">
+            <color red="0.18400000035762787" green="0.19599999487400055" blue="0.23899999260902405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

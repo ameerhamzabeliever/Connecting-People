@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecentConvoVC" customModule="Quokka" customModuleProvider="target">
+            <connections>
+                <outlet property="imgNoCall" destination="11D-Mp-EZ6" id="PEe-Ri-DF2"/>
+                <outlet property="tvRecenCalls" destination="hp4-tS-WyL" id="J48-1Z-Xec"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hp4-tS-WyL">
+                    <rect key="frame" x="20" y="0.0" width="335" height="812"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="hrG-He-tmQ"/>
+                        <outlet property="delegate" destination="-1" id="neI-De-E2G"/>
+                    </connections>
+                </tableView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoCalls" translatesAutoresizingMaskIntoConstraints="NO" id="11D-Mp-EZ6">
+                    <rect key="frame" x="20" y="10" width="335" height="195"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="11D-Mp-EZ6" secondAttribute="height" multiplier="67:39" id="DEv-4o-UKe"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="hp4-tS-WyL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="37c-Cg-gOe"/>
+                <constraint firstItem="11D-Mp-EZ6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="6rC-W2-cD0"/>
+                <constraint firstAttribute="bottom" secondItem="hp4-tS-WyL" secondAttribute="bottom" id="8ju-Kv-pg4"/>
+                <constraint firstAttribute="trailing" secondItem="11D-Mp-EZ6" secondAttribute="trailing" constant="20" id="PIQ-7U-8fw"/>
+                <constraint firstItem="11D-Mp-EZ6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="ROR-8Y-oms"/>
+                <constraint firstItem="hp4-tS-WyL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="eOt-ga-hEm"/>
+                <constraint firstAttribute="trailing" secondItem="hp4-tS-WyL" secondAttribute="trailing" constant="20" id="nf0-1h-v7P"/>
+            </constraints>
+            <point key="canvasLocation" x="-23" y="75"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="NoCalls" width="1372" height="792"/>
+    </resources>
+</document>

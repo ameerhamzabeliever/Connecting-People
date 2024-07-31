@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Apercu Pro Medium.otf">
+            <string>ApercuPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="Quokka" customModuleProvider="target">
+            <connections>
+                <outlet property="conslblWannaChatTop" destination="jhh-HS-Qae" id="6Z1-dg-rr2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewAppleBtn" destination="7vq-mu-I31" id="0bn-fx-UCZ"/>
+                <outlet property="viewSnapChat" destination="ABy-oC-FCy" id="c3B-fW-S44"/>
+                <outlet property="viewSnapChatBtn" destination="pyH-Hv-FmV" id="QgS-q3-ECR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVW-rp-NUX">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IGg-Ek-b4Q" userLabel="Top View">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="406"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-Transparent" translatesAutoresizingMaskIntoConstraints="NO" id="IjO-Va-aCX">
+                                    <rect key="frame" x="133.66666666666666" y="181.66666666666666" width="108" height="122.99999999999997"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="IjO-Va-aCX" secondAttribute="height" multiplier="108:123" id="zmX-Zy-XkJ"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="IjO-Va-aCX" firstAttribute="width" secondItem="IGg-Ek-b4Q" secondAttribute="width" multiplier="0.288" id="A3p-0K-1Q5"/>
+                                <constraint firstItem="IjO-Va-aCX" firstAttribute="centerX" secondItem="IGg-Ek-b4Q" secondAttribute="centerX" id="Veq-B6-yq8"/>
+                                <constraint firstItem="IjO-Va-aCX" firstAttribute="centerY" secondItem="IGg-Ek-b4Q" secondAttribute="centerY" constant="40" id="vn0-XK-qVx"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QMG-T7-Imy" userLabel="Bottom View">
+                            <rect key="frame" x="0.0" y="406" width="375" height="406"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABy-oC-FCy" userLabel="SnapChat View">
+                                    <rect key="frame" x="22" y="10" width="331" height="300"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wanna chat?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXm-dg-Kbo">
+                                            <rect key="frame" x="89.333333333333329" y="25" width="152.33333333333337" height="31"/>
+                                            <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="26"/>
+                                            <color key="textColor" name="Text-Color-1-100"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Free anonymous confidential conversations with people who care and listen" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aA-MN-UvL">
+                                            <rect key="frame" x="38.666666666666657" y="69" width="253.99999999999997" height="63"/>
+                                            <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="18"/>
+                                            <color key="textColor" name="Text-Color-1-60"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pyH-Hv-FmV" userLabel="SnapChat Button">
+                                            <rect key="frame" x="31" y="152" width="269" height="60"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login with Snapchat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmS-W5-hCP">
+                                                    <rect key="frame" x="72.000000000000014" y="19.666666666666629" width="165.33333333333337" height="21"/>
+                                                    <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="18"/>
+                                                    <color key="textColor" name="Text-Color-1-90"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snap-logo" translatesAutoresizingMaskIntoConstraints="NO" id="e4P-Gc-JdT">
+                                                    <rect key="frame" x="39.666666666666671" y="19" width="22.333333333333329" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="e4P-Gc-JdT" secondAttribute="height" multiplier="1:1" id="GLQ-uW-ves"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGK-8b-bKs">
+                                                    <rect key="frame" x="0.0" y="0.0" width="269" height="60"/>
+                                                    <connections>
+                                                        <action selector="snapChatTapped:" destination="-1" eventType="touchUpInside" id="DcD-uR-yAf"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" name="SnapChat"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="EGK-8b-bKs" secondAttribute="bottom" id="1LZ-bZ-K4l"/>
+                                                <constraint firstItem="JmS-W5-hCP" firstAttribute="leading" secondItem="e4P-Gc-JdT" secondAttribute="trailing" constant="10" id="21W-LH-Vie"/>
+                                                <constraint firstItem="e4P-Gc-JdT" firstAttribute="width" secondItem="pyH-Hv-FmV" secondAttribute="width" multiplier="0.0818859" id="CtI-Ib-AFP"/>
+                                                <constraint firstItem="JmS-W5-hCP" firstAttribute="centerY" secondItem="pyH-Hv-FmV" secondAttribute="centerY" id="KwI-qs-oDh"/>
+                                                <constraint firstItem="EGK-8b-bKs" firstAttribute="top" secondItem="pyH-Hv-FmV" secondAttribute="top" id="Uf9-Zi-Aze"/>
+                                                <constraint firstAttribute="trailing" secondItem="EGK-8b-bKs" secondAttribute="trailing" id="Ulb-A1-8QC"/>
+                                                <constraint firstItem="EGK-8b-bKs" firstAttribute="leading" secondItem="pyH-Hv-FmV" secondAttribute="leading" id="Ywp-uo-x0L"/>
+                                                <constraint firstItem="JmS-W5-hCP" firstAttribute="centerX" secondItem="pyH-Hv-FmV" secondAttribute="centerX" constant="20" id="eBz-RK-5UA"/>
+                                                <constraint firstItem="e4P-Gc-JdT" firstAttribute="centerY" secondItem="pyH-Hv-FmV" secondAttribute="centerY" id="q3O-H0-RLX"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7vq-mu-I31" userLabel="Apple Button">
+                                            <rect key="frame" x="31" y="222" width="269" height="60"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with Apple" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XiV-EQ-aJa">
+                                                    <rect key="frame" x="82.000000000000014" y="19.666666666666629" width="145.33333333333337" height="21"/>
+                                                    <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="c1d-BZ-CJh">
+                                                    <rect key="frame" x="49.666666666666671" y="19" width="22.333333333333329" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="c1d-BZ-CJh" secondAttribute="height" multiplier="1:1" id="kmm-G2-aQq"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mI-OB-9Ai">
+                                                    <rect key="frame" x="0.0" y="0.0" width="269" height="60"/>
+                                                    <connections>
+                                                        <action selector="appleLoginTapped:" destination="-1" eventType="touchUpInside" id="M6L-jF-DO7"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="XiV-EQ-aJa" firstAttribute="centerX" secondItem="7vq-mu-I31" secondAttribute="centerX" constant="20" id="4bs-q9-hqJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="3mI-OB-9Ai" secondAttribute="bottom" id="P24-Nx-GJr"/>
+                                                <constraint firstItem="XiV-EQ-aJa" firstAttribute="centerY" secondItem="7vq-mu-I31" secondAttribute="centerY" id="VE0-xo-cCo"/>
+                                                <constraint firstItem="3mI-OB-9Ai" firstAttribute="leading" secondItem="7vq-mu-I31" secondAttribute="leading" id="kd1-Vm-MVC"/>
+                                                <constraint firstItem="c1d-BZ-CJh" firstAttribute="centerY" secondItem="7vq-mu-I31" secondAttribute="centerY" id="m3B-h4-sRd"/>
+                                                <constraint firstAttribute="trailing" secondItem="3mI-OB-9Ai" secondAttribute="trailing" id="rwx-mS-gXf"/>
+                                                <constraint firstItem="XiV-EQ-aJa" firstAttribute="leading" secondItem="c1d-BZ-CJh" secondAttribute="trailing" constant="10" id="u8q-fr-2Bh"/>
+                                                <constraint firstItem="c1d-BZ-CJh" firstAttribute="width" secondItem="7vq-mu-I31" secondAttribute="width" multiplier="0.0818859" id="uZJ-8e-8Fn"/>
+                                                <constraint firstItem="3mI-OB-9Ai" firstAttribute="top" secondItem="7vq-mu-I31" secondAttribute="top" id="y0v-hu-4DS"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="9aA-MN-UvL" firstAttribute="top" secondItem="nXm-dg-Kbo" secondAttribute="bottom" constant="13" id="4HQ-Do-FKp"/>
+                                        <constraint firstItem="pyH-Hv-FmV" firstAttribute="centerX" secondItem="ABy-oC-FCy" secondAttribute="centerX" id="GrC-za-IFX"/>
+                                        <constraint firstItem="nXm-dg-Kbo" firstAttribute="centerX" secondItem="ABy-oC-FCy" secondAttribute="centerX" id="HL0-6S-eee"/>
+                                        <constraint firstItem="pyH-Hv-FmV" firstAttribute="top" secondItem="9aA-MN-UvL" secondAttribute="bottom" constant="20" id="NtG-Nw-bzX"/>
+                                        <constraint firstItem="pyH-Hv-FmV" firstAttribute="width" secondItem="ABy-oC-FCy" secondAttribute="width" multiplier="0.812689" id="Pex-Dc-bMo"/>
+                                        <constraint firstItem="7vq-mu-I31" firstAttribute="top" secondItem="pyH-Hv-FmV" secondAttribute="bottom" constant="10" id="QYy-0q-dtP"/>
+                                        <constraint firstItem="9aA-MN-UvL" firstAttribute="width" secondItem="ABy-oC-FCy" secondAttribute="width" multiplier="0.767372" id="RC7-2P-fsD"/>
+                                        <constraint firstItem="pyH-Hv-FmV" firstAttribute="height" secondItem="ABy-oC-FCy" secondAttribute="height" multiplier="0.2" id="Si3-vH-jpX"/>
+                                        <constraint firstItem="7vq-mu-I31" firstAttribute="centerX" secondItem="ABy-oC-FCy" secondAttribute="centerX" id="V7E-RV-7c3"/>
+                                        <constraint firstItem="nXm-dg-Kbo" firstAttribute="top" secondItem="ABy-oC-FCy" secondAttribute="top" constant="25" id="jhh-HS-Qae"/>
+                                        <constraint firstItem="9aA-MN-UvL" firstAttribute="centerX" secondItem="ABy-oC-FCy" secondAttribute="centerX" id="ozn-el-Bu9"/>
+                                        <constraint firstItem="7vq-mu-I31" firstAttribute="height" secondItem="ABy-oC-FCy" secondAttribute="height" multiplier="0.2" id="rxR-UW-Gq1"/>
+                                        <constraint firstItem="7vq-mu-I31" firstAttribute="width" secondItem="ABy-oC-FCy" secondAttribute="width" multiplier="0.812689" id="uXu-ri-M5u"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by signing up you agree to our" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Llc-Rx-QHo">
+                                    <rect key="frame" x="49" y="330" width="177" height="16"/>
+                                    <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="13"/>
+                                    <color key="textColor" name="Text-Color-1-70"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OxN-IB-L4c" userLabel="btnPrivacy">
+                                    <rect key="frame" x="230" y="324" width="113" height="28"/>
+                                    <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="13"/>
+                                    <state key="normal" title="terms &amp; conditions,">
+                                        <color key="titleColor" systemColor="linkColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="termsTapped:" destination="-1" eventType="touchUpInside" id="Dlh-dA-MSC"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCk-sf-g89" userLabel="btnPrivacy">
+                                    <rect key="frame" x="91.666666666666686" y="347" width="80" height="28"/>
+                                    <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="13"/>
+                                    <state key="normal" title="privacy policy">
+                                        <color key="titleColor" systemColor="linkColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="privacyTapped:" destination="-1" eventType="touchUpInside" id="fHT-fM-NaI"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVj-i9-qE0">
+                                    <rect key="frame" x="176.66666666666666" y="353" width="22" height="16"/>
+                                    <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="13"/>
+                                    <color key="textColor" name="Text-Color-1-70"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaq-29-nzl" userLabel="btnAgreement">
+                                    <rect key="frame" x="203.66666666666663" y="347" width="117" height="28"/>
+                                    <fontDescription key="fontDescription" name="ApercuPro-Medium" family="Apercu Pro" pointSize="13"/>
+                                    <state key="normal" title="end user agreement">
+                                        <color key="titleColor" systemColor="linkColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="agreementTapped:" destination="-1" eventType="touchUpInside" id="ez5-jA-ACc"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="ABy-oC-FCy" firstAttribute="width" secondItem="QMG-T7-Imy" secondAttribute="width" multiplier="0.882667" id="2aJ-Ok-Rs3"/>
+                                <constraint firstItem="ABy-oC-FCy" firstAttribute="top" secondItem="QMG-T7-Imy" secondAttribute="top" constant="10" id="72o-Wi-iI7"/>
+                                <constraint firstItem="OVj-i9-qE0" firstAttribute="top" secondItem="Llc-Rx-QHo" secondAttribute="bottom" constant="7" id="DfS-cn-UJq"/>
+                                <constraint firstItem="OVj-i9-qE0" firstAttribute="leading" secondItem="iCk-sf-g89" secondAttribute="trailing" constant="5" id="L3o-Qy-kQp"/>
+                                <constraint firstItem="OVj-i9-qE0" firstAttribute="centerX" secondItem="QMG-T7-Imy" secondAttribute="centerX" id="My4-ZU-bQE"/>
+                                <constraint firstItem="Llc-Rx-QHo" firstAttribute="centerX" secondItem="QMG-T7-Imy" secondAttribute="centerX" constant="-50" id="TYH-ZD-Ial"/>
+                                <constraint firstItem="aaq-29-nzl" firstAttribute="centerY" secondItem="OVj-i9-qE0" secondAttribute="centerY" id="Ufg-RW-DpS"/>
+                                <constraint firstItem="ABy-oC-FCy" firstAttribute="height" secondItem="QMG-T7-Imy" secondAttribute="height" multiplier="0.738916" id="VdA-82-Ojp"/>
+                                <constraint firstItem="OxN-IB-L4c" firstAttribute="centerY" secondItem="Llc-Rx-QHo" secondAttribute="centerY" id="VyG-0E-f5E"/>
+                                <constraint firstItem="aaq-29-nzl" firstAttribute="leading" secondItem="OVj-i9-qE0" secondAttribute="trailing" constant="5" id="Xjf-KJ-gu4"/>
+                                <constraint firstItem="ABy-oC-FCy" firstAttribute="centerX" secondItem="QMG-T7-Imy" secondAttribute="centerX" id="hk5-De-2hR"/>
+                                <constraint firstItem="OxN-IB-L4c" firstAttribute="leading" secondItem="Llc-Rx-QHo" secondAttribute="trailing" constant="4" id="hyC-IO-bch"/>
+                                <constraint firstItem="iCk-sf-g89" firstAttribute="centerY" secondItem="OVj-i9-qE0" secondAttribute="centerY" id="k7Q-ji-tca"/>
+                                <constraint firstItem="Llc-Rx-QHo" firstAttribute="top" secondItem="ABy-oC-FCy" secondAttribute="bottom" constant="20" id="tuP-jm-c8c"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="QMG-T7-Imy" firstAttribute="height" secondItem="UVW-rp-NUX" secondAttribute="height" multiplier="0.5" id="3YZ-EI-v3r"/>
+                        <constraint firstAttribute="trailing" secondItem="IGg-Ek-b4Q" secondAttribute="trailing" id="GET-Sj-wKc"/>
+                        <constraint firstAttribute="bottom" secondItem="QMG-T7-Imy" secondAttribute="bottom" id="Hpq-mR-cpi"/>
+                        <constraint firstAttribute="trailing" secondItem="QMG-T7-Imy" secondAttribute="trailing" id="Ogy-N4-4P9"/>
+                        <constraint firstItem="IGg-Ek-b4Q" firstAttribute="height" secondItem="UVW-rp-NUX" secondAttribute="height" multiplier="0.5" id="Qo6-bc-YCF"/>
+                        <constraint firstItem="QMG-T7-Imy" firstAttribute="leading" secondItem="UVW-rp-NUX" secondAttribute="leading" id="Wa7-Dd-VTw"/>
+                        <constraint firstItem="IGg-Ek-b4Q" firstAttribute="top" secondItem="UVW-rp-NUX" secondAttribute="top" id="zoN-ef-fug"/>
+                        <constraint firstItem="IGg-Ek-b4Q" firstAttribute="leading" secondItem="UVW-rp-NUX" secondAttribute="leading" id="zsS-jg-X9q"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="Bg-WhiteGrey"/>
+            <constraints>
+                <constraint firstItem="UVW-rp-NUX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Jaj-wR-iP2"/>
+                <constraint firstItem="UVW-rp-NUX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="adK-xg-nnN"/>
+                <constraint firstAttribute="bottom" secondItem="UVW-rp-NUX" secondAttribute="bottom" id="eRm-e9-LVe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UVW-rp-NUX" secondAttribute="trailing" id="iLx-Ux-DFg"/>
+            </constraints>
+            <point key="canvasLocation" x="138.40000000000001" y="114.53201970443351"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Logo-Transparent" width="512" height="587"/>
+        <image name="apple" width="128" height="128"/>
+        <image name="snap-logo" width="128" height="128"/>
+        <namedColor name="Bg-WhiteGrey">
+            <color red="0.96100002527236938" green="0.96100002527236938" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SnapChat">
+            <color red="1" green="0.98799997568130493" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text-Color-1-100">
+            <color red="0.18400000035762787" green="0.19599999487400055" blue="0.23899999260902405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text-Color-1-60">
+            <color red="0.18400000035762787" green="0.19599999487400055" blue="0.23899999260902405" alpha="0.60000002384185791" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text-Color-1-70">
+            <color red="0.18400000035762787" green="0.19599999487400055" blue="0.23899999260902405" alpha="0.69999998807907104" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text-Color-1-90">
+            <color red="0.18400000035762787" green="0.19599999487400055" blue="0.23899999260902405" alpha="0.89999997615814209" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
